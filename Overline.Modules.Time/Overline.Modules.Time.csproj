@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>Overline.Modules.Time</RootNamespace>
+    <Description>Reference module: local time with emoji clock face.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Overline.Core\Overline.Core.csproj" />
+  </ItemGroup>
+
+</Project>

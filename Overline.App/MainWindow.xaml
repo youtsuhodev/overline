@@ -1,0 +1,139 @@
+<Window x:Class="Overline.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding AppTitle}"
+        Width="760" Height="520"
+        MinWidth="640" MinHeight="420"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource WindowBackground}">
+
+    <Window.Resources>
+        <Style x:Key="CardBorder" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource CardBackground}" />
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="Padding" Value="16" />
+            <Setter Property="Margin" Value="0,0,0,12" />
+        </Style>
+        <Style x:Key="SectionTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}" />
+            <Setter Property="Margin" Value="0,0,0,10" />
+        </Style>
+        <Style x:Key="BodyText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource TextSecondary}" />
+            <Setter Property="FontSize" Value="12.5" />
+        </Style>
+        <Style x:Key="SwitchText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}" />
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,16">
+            <TextBlock Text="⬆️" FontSize="26" VerticalAlignment="Center" Margin="0,0,10,0" />
+            <TextBlock Text="Overline" FontSize="24" FontWeight="Bold"
+                       Foreground="{StaticResource TextPrimary}" VerticalAlignment="Center" />
+            <TextBlock Text="v0.1 — fondations" FontSize="12" Margin="12,6,0,0"
+                       Foreground="{StaticResource TextSecondary}" VerticalAlignment="Center" />
+        </StackPanel>
+
+        <!-- Live preview -->
+        <Border Grid.Row="1" Style="{StaticResource CardBorder}">
+            <StackPanel>
+                <TextBlock Style="{StaticResource SectionTitle}" Text="💬 Live preview" />
+                <Border Background="#16000000" CornerRadius="6" Padding="12,10">
+                    <TextBlock Text="{Binding PreviewLine}" FontSize="14"
+                               Foreground="{StaticResource TextPrimary}"
+                               TextWrapping="Wrap" />
+                </Border>
+                <TextBlock Style="{StaticResource BodyText}" Margin="0,8,0,0"
+                           Text="Sent over OSC to VRChat at 127.0.0.1:9000 when modules are running. Enable OSC in VRChat to see it in-game." />
+            </StackPanel>
+        </Border>
+
+        <!-- Modules -->
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBlock Style="{StaticResource SectionTitle}" Text="🧩 Modules" Margin="0,4,0,10" />
+
+                <!-- Time module card -->
+                <Border Style="{StaticResource CardBorder}">
+                    <StackPanel>
+                        <Grid>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🕐" FontSize="18" VerticalAlignment="Center" Margin="0,0,8,0" />
+                                <TextBlock Style="{StaticResource SwitchText}" FontWeight="SemiBold" Text="Time" />
+                            </StackPanel>
+                            <CheckBox HorizontalAlignment="Right" VerticalAlignment="Center"
+                                      IsChecked="{Binding TimeModuleEnabled}" Content="Enabled" />
+                        </Grid>
+                        <TextBlock Style="{StaticResource BodyText}" Margin="26,6,0,0"
+                                   Text="Your local time and time zone, with clock-face emoji." />
+
+                        <!-- Time settings -->
+                        <StackPanel Margin="26,10,0,0">
+                            <CheckBox IsChecked="{Binding TimeSettings.ShowDate}" Content="Show date"
+                                      Foreground="{StaticResource TextSecondary}" Margin="0,2" />
+                            <CheckBox IsChecked="{Binding TimeSettings.ShowEmoji}" Content="Show clock emoji"
+                                      Foreground="{StaticResource TextSecondary}" Margin="0,2" />
+                            <CheckBox IsChecked="{Binding TimeSettings.ShowTimeZone}" Content="Show time zone"
+                                      Foreground="{StaticResource TextSecondary}" Margin="0,2" />
+                            <CheckBox IsChecked="{Binding TimeSettings.Use24Hour}" Content="24-hour clock"
+                                      Foreground="{StaticResource TextSecondary}" Margin="0,2" />
+                            <CheckBox IsChecked="{Binding TimeSettings.ShowSeconds}" Content="Show seconds"
+                                      Foreground="{StaticResource TextSecondary}" Margin="0,2" />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!-- Media module card -->
+                <Border Style="{StaticResource CardBorder}">
+                    <StackPanel>
+                        <Grid>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🎵" FontSize="18" VerticalAlignment="Center" Margin="0,0,8,0" />
+                                <TextBlock Style="{StaticResource SwitchText}" FontWeight="SemiBold" Text="Media" />
+                            </StackPanel>
+                            <CheckBox HorizontalAlignment="Right" VerticalAlignment="Center"
+                                      IsChecked="{Binding MediaModuleEnabled}" Content="Enabled" />
+                        </Grid>
+                        <TextBlock Style="{StaticResource BodyText}" Margin="26,6,0,0"
+                                   Text="Currently playing media on this PC — title, artist and playback time." />
+
+                        <!-- Media settings -->
+                        <StackPanel Margin="26,10,0,0">
+                            <CheckBox IsChecked="{Binding MediaSettings.ShowEmoji}" Content="Show music emoji"
+                                      Foreground="{StaticResource TextSecondary}" Margin="0,2" />
+                            <CheckBox IsChecked="{Binding MediaSettings.ShowTitle}" Content="Show title"
+                                      Foreground="{StaticResource TextSecondary}" Margin="0,2" />
+                            <CheckBox IsChecked="{Binding MediaSettings.ShowArtist}" Content="Show artist"
+                                      Foreground="{StaticResource TextSecondary}" Margin="0,2" />
+                            <CheckBox IsChecked="{Binding MediaSettings.ShowTime}" Content="Show playback time"
+                                      Foreground="{StaticResource TextSecondary}" Margin="0,2" />
+                            <CheckBox IsChecked="{Binding MediaSettings.ShowProgressBar}" Content="Show progress bar"
+                                      Foreground="{StaticResource TextSecondary}" Margin="0,2" />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <Grid Margin="0,4,0,0">
+                    <Button Command="{Binding StartStopCommand}" HorizontalAlignment="Left" Padding="18,9">
+                        <TextBlock Text="▶ Start / ■ Stop modules" />
+                    </Button>
+                    <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center"
+                               Text="{Binding StatusText}" Style="{StaticResource BodyText}" />
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

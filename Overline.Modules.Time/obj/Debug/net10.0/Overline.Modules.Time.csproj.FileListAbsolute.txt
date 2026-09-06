@@ -1,0 +1,16 @@
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\obj\Debug\net10.0\Overline.Modules.Time.csproj.AssemblyReference.cache
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\obj\Debug\net10.0\Overline.Modules.Time.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\obj\Debug\net10.0\Overline.Modules.Time.AssemblyInfoInputs.cache
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\obj\Debug\net10.0\Overline.Modules.Time.AssemblyInfo.cs
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\obj\Debug\net10.0\Overline.Modules.Time.csproj.CoreCompileInputs.cache
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\obj\Debug\net10.0\Overline.Modules.Time.sourcelink.json
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\bin\Debug\net10.0\Overline.Modules.Time.deps.json
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\bin\Debug\net10.0\Overline.Modules.Time.dll
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\bin\Debug\net10.0\Overline.Modules.Time.pdb
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\bin\Debug\net10.0\Overline.Core.dll
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\bin\Debug\net10.0\Overline.Core.pdb
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\obj\Debug\net10.0\Overline.70FADA86.Up2Date
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\obj\Debug\net10.0\Overline.Modules.Time.dll
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\obj\Debug\net10.0\refint\Overline.Modules.Time.dll
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\obj\Debug\net10.0\Overline.Modules.Time.pdb
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Modules.Time\obj\Debug\net10.0\ref\Overline.Modules.Time.dll

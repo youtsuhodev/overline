@@ -1,0 +1,5 @@
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\artifacts\publish\win-x64\Overline.pdb
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\artifacts\publish\win-x64\Overline.Core.pdb
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\artifacts\publish\win-x64\Overline.Modules.Time.pdb
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\artifacts\publish\win-x64\Overline.Modules.Media.pdb
+C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\artifacts\publish\win-x64\Overline.exe

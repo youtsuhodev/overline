@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows10.0.26100.0</TargetFramework>
+    <RootNamespace>Overline.Modules.Media</RootNamespace>
+    <Description>Currently playing media on this PC (title, artist, playback time) via Windows Media Session.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dubya.WindowsMediaController" />
+    <PackageReference Include="Microsoft.Extensions.Logging" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Overline.Core\Overline.Core.csproj" />
+  </ItemGroup>
+
+</Project>

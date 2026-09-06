@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Overline.App/Overline.App.csproj" />
+  <Project Path="Overline.Core/Overline.Core.csproj" />
+  <Project Path="Overline.Modules.Media/Overline.Modules.Media.csproj" />
+  <Project Path="Overline.Modules.Time/Overline.Modules.Time.csproj" />
+  <Project Path="Overline.Tests/Overline.Tests.csproj" />
+</Solution>
