@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Contracts, settings, OSC encoding and privacy primitives for Overline modules.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0+bf886d2e3bdf99af25f716f509cf18a2668190e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0+43cf14756e292557a495cacd3455cc3589b41378")]
 [assembly: System.Reflection.AssemblyProductAttribute("Overline.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Overline.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.1.0.0")]

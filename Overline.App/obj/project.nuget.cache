@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LNVdJWWmyLE=",
+  "dgSpecHash": "yZSfK2o3Wzw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\VgL8\\Documents\\GitHub\\vrcosc-magicchatbox\\Overline.App\\Overline.App.csproj",
+  "projectFilePath": "C:\\Users\\VgL8\\Documents\\GitHub\\overline1\\Overline.App\\Overline.App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VgL8\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.2\\communitytoolkit.mvvm.8.4.2.nupkg.sha512",
     "C:\\Users\\VgL8\\.nuget\\packages\\dubya.windowsmediacontroller\\2.5.6\\dubya.windowsmediacontroller.2.5.6.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q7Eb5Ew7elQ=",
+  "dgSpecHash": "5zIkZVyYUoI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\VgL8\\Documents\\GitHub\\vrcosc-magicchatbox\\Overline.Tests\\Overline.Tests.csproj",
+  "projectFilePath": "C:\\Users\\VgL8\\Documents\\GitHub\\overline1\\Overline.Tests\\Overline.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VgL8\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.2\\communitytoolkit.mvvm.8.4.2.nupkg.sha512",
     "C:\\Users\\VgL8\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",

@@ -7,14 +7,15 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {},
     ".NETCoreApp,Version=v10.0/win-x64": {
-      "Overline.Tests/1.0.0": {
+      "Overline.Tests/0.1.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "10.0.0",
           "Microsoft.NET.Test.Sdk": "18.0.0",
-          "Overline.App": "1.0.0",
-          "Overline.Core": "1.0.0",
-          "Overline.Modules.Time": "1.0.0",
+          "Overline": "0.1.0",
+          "Overline.Core": "0.1.0",
+          "Overline.Modules.Time": "0.1.0",
           "xunit": "2.9.3",
+          "Overline.Reference": "0.1.0.0",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.26100.57"
         },
         "runtime": {
@@ -726,62 +727,69 @@
           }
         }
       },
-      "Overline.App/1.0.0": {
+      "Overline/0.1.0": {
         "dependencies": {
           "CommunityToolkit.Mvvm": "8.4.2",
           "Microsoft.Extensions.DependencyInjection": "10.0.0",
           "Microsoft.Extensions.Hosting": "10.0.0",
           "Microsoft.Extensions.Logging.Debug": "10.0.0",
-          "Overline.Core": "1.0.0",
-          "Overline.Modules.Media": "1.0.0",
-          "Overline.Modules.Time": "1.0.0"
+          "Overline.Core": "0.1.0",
+          "Overline.Modules.Media": "0.1.0",
+          "Overline.Modules.Time": "0.1.0"
         },
         "runtime": {
-          "Overline.App.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+          "Overline.dll": {
+            "fileVersion": "0.0.0.0"
           }
         }
       },
-      "Overline.Core/1.0.0": {
+      "Overline.Core/0.1.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "10.0.0"
         },
         "runtime": {
           "Overline.Core.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
           }
         }
       },
-      "Overline.Modules.Media/1.0.0": {
+      "Overline.Modules.Media/0.1.0": {
         "dependencies": {
           "Dubya.WindowsMediaController": "2.5.6",
           "Microsoft.Extensions.Logging": "10.0.0",
-          "Overline.Core": "1.0.0"
+          "Overline.Core": "0.1.0"
         },
         "runtime": {
           "Overline.Modules.Media.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
           }
         }
       },
-      "Overline.Modules.Time/1.0.0": {
+      "Overline.Modules.Time/0.1.0": {
         "dependencies": {
-          "Overline.Core": "1.0.0"
+          "Overline.Core": "0.1.0"
         },
         "runtime": {
           "Overline.Modules.Time.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "Overline.Reference/0.1.0.0": {
+        "runtime": {
+          "Overline.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
           }
         }
       }
     }
   },
   "libraries": {
-    "Overline.Tests/1.0.0": {
+    "Overline.Tests/0.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1071,23 +1079,28 @@
       "path": "xunit.extensibility.execution/2.9.3",
       "hashPath": "xunit.extensibility.execution.2.9.3.nupkg.sha512"
     },
-    "Overline.App/1.0.0": {
+    "Overline/0.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Overline.Core/1.0.0": {
+    "Overline.Core/0.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Overline.Modules.Media/1.0.0": {
+    "Overline.Modules.Media/0.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Overline.Modules.Time/1.0.0": {
+    "Overline.Modules.Time/0.1.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Overline.Reference/0.1.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

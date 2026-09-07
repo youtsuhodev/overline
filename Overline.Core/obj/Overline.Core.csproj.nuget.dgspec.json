@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\VgL8\\Documents\\GitHub\\vrcosc-magicchatbox\\Overline.Core\\Overline.Core.csproj": {}
+    "C:\\Users\\VgL8\\Documents\\GitHub\\overline1\\Overline.Core\\Overline.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\VgL8\\Documents\\GitHub\\vrcosc-magicchatbox\\Overline.Core\\Overline.Core.csproj": {
+    "C:\\Users\\VgL8\\Documents\\GitHub\\overline1\\Overline.Core\\Overline.Core.csproj": {
       "version": "0.1.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\VgL8\\Documents\\GitHub\\vrcosc-magicchatbox\\Overline.Core\\Overline.Core.csproj",
+        "projectUniqueName": "C:\\Users\\VgL8\\Documents\\GitHub\\overline1\\Overline.Core\\Overline.Core.csproj",
         "projectName": "Overline.Core",
-        "projectPath": "C:\\Users\\VgL8\\Documents\\GitHub\\vrcosc-magicchatbox\\Overline.Core\\Overline.Core.csproj",
+        "projectPath": "C:\\Users\\VgL8\\Documents\\GitHub\\overline1\\Overline.Core\\Overline.Core.csproj",
         "packagesPath": "C:\\Users\\VgL8\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\VgL8\\Documents\\GitHub\\vrcosc-magicchatbox\\Overline.Core\\obj\\",
+        "outputPath": "C:\\Users\\VgL8\\Documents\\GitHub\\overline1\\Overline.Core\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [

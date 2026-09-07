@@ -575,11 +575,11 @@
   "project": {
     "version": "0.1.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VgL8\\Documents\\GitHub\\vrcosc-magicchatbox\\Overline.Modules.Time\\Overline.Modules.Time.csproj",
+      "projectUniqueName": "C:\\Users\\VgL8\\Documents\\GitHub\\overline1\\Overline.Modules.Time\\Overline.Modules.Time.csproj",
       "projectName": "Overline.Modules.Time",
-      "projectPath": "C:\\Users\\VgL8\\Documents\\GitHub\\vrcosc-magicchatbox\\Overline.Modules.Time\\Overline.Modules.Time.csproj",
+      "projectPath": "C:\\Users\\VgL8\\Documents\\GitHub\\overline1\\Overline.Modules.Time\\Overline.Modules.Time.csproj",
       "packagesPath": "C:\\Users\\VgL8\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VgL8\\Documents\\GitHub\\vrcosc-magicchatbox\\Overline.Modules.Time\\obj\\",
+      "outputPath": "C:\\Users\\VgL8\\Documents\\GitHub\\overline1\\Overline.Modules.Time\\obj\\",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "configFilePaths": [
@@ -596,8 +596,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\VgL8\\Documents\\GitHub\\vrcosc-magicchatbox\\Overline.Core\\Overline.Core.csproj": {
-              "projectPath": "C:\\Users\\VgL8\\Documents\\GitHub\\vrcosc-magicchatbox\\Overline.Core\\Overline.Core.csproj"
+            "C:\\Users\\VgL8\\Documents\\GitHub\\overline1\\Overline.Core\\Overline.Core.csproj": {
+              "projectPath": "C:\\Users\\VgL8\\Documents\\GitHub\\overline1\\Overline.Core\\Overline.Core.csproj"
             }
           }
         }

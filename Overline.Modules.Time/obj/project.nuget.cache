@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MEhEEukblDU=",
+  "dgSpecHash": "5PJAw1MhzG8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\VgL8\\Documents\\GitHub\\vrcosc-magicchatbox\\Overline.Modules.Time\\Overline.Modules.Time.csproj",
+  "projectFilePath": "C:\\Users\\VgL8\\Documents\\GitHub\\overline1\\Overline.Modules.Time\\Overline.Modules.Time.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VgL8\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.0\\microsoft.extensions.dependencyinjection.10.0.0.nupkg.sha512",
     "C:\\Users\\VgL8\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",

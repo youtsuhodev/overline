@@ -11,3 +11,16 @@ C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Core\obj\Release\net
 C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Core\obj\Release\net10.0\refint\Overline.Core.dll
 C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Core\obj\Release\net10.0\Overline.Core.pdb
 C:\Users\VgL8\Documents\GitHub\vrcosc-magicchatbox\Overline.Core\obj\Release\net10.0\ref\Overline.Core.dll
+C:\Users\VgL8\Documents\GitHub\overline1\Overline.Core\bin\Release\net10.0\Overline.Core.deps.json
+C:\Users\VgL8\Documents\GitHub\overline1\Overline.Core\bin\Release\net10.0\Overline.Core.dll
+C:\Users\VgL8\Documents\GitHub\overline1\Overline.Core\bin\Release\net10.0\Overline.Core.pdb
+C:\Users\VgL8\Documents\GitHub\overline1\Overline.Core\obj\Release\net10.0\Overline.Core.csproj.AssemblyReference.cache
+C:\Users\VgL8\Documents\GitHub\overline1\Overline.Core\obj\Release\net10.0\Overline.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VgL8\Documents\GitHub\overline1\Overline.Core\obj\Release\net10.0\Overline.Core.AssemblyInfoInputs.cache
+C:\Users\VgL8\Documents\GitHub\overline1\Overline.Core\obj\Release\net10.0\Overline.Core.AssemblyInfo.cs
+C:\Users\VgL8\Documents\GitHub\overline1\Overline.Core\obj\Release\net10.0\Overline.Core.csproj.CoreCompileInputs.cache
+C:\Users\VgL8\Documents\GitHub\overline1\Overline.Core\obj\Release\net10.0\Overline.Core.sourcelink.json
+C:\Users\VgL8\Documents\GitHub\overline1\Overline.Core\obj\Release\net10.0\Overline.Core.dll
+C:\Users\VgL8\Documents\GitHub\overline1\Overline.Core\obj\Release\net10.0\refint\Overline.Core.dll
+C:\Users\VgL8\Documents\GitHub\overline1\Overline.Core\obj\Release\net10.0\Overline.Core.pdb
+C:\Users\VgL8\Documents\GitHub\overline1\Overline.Core\obj\Release\net10.0\ref\Overline.Core.dll
