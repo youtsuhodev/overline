@@ -48,6 +48,10 @@ public partial class App : Application
         services.AddSingleton<ISettingsHolder<MediaSettings>>(sp =>
             new SettingsHolder<MediaSettings>(sp.GetRequiredService<ISettingsStore>(), "media"));
 
+        // App-level UI settings (language, …)
+        services.AddSingleton<ISettingsHolder<UiSettings>>(sp =>
+            new SettingsHolder<UiSettings>(sp.GetRequiredService<ISettingsStore>(), "ui"));
+
         // Media session monitor (Windows-only, gated behind MediaSession consent)
         services.AddSingleton<IMediaSessionMonitor, WindowsMediaSessionMonitor>();
 

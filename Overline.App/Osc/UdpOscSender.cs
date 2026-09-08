@@ -5,6 +5,9 @@ using Overline.Core.Osc;
 
 namespace Overline.App.Osc;
 
+/// <summary>Result of one OSC send attempt, for UI status indicators.</summary>
+public sealed record OscSendResultEventArgs(bool Success, DateTimeOffset Timestamp, int Bytes);
+
 /// <summary>
 /// Sends encoded OSC packets over UDP to VRChat. Thin on purpose:
 /// all interesting logic (encoding, budget, assembly) lives in Core.
@@ -13,6 +16,9 @@ public interface IOscSender : IDisposable
 {
     /// <summary>Send a chatbox update. Returns false when the send failed (logged, never thrown).</summary>
     bool SendChatbox(OscChatboxMessage message);
+
+    /// <summary>Raised after every send attempt with its outcome (UI status indicator).</summary>
+    event EventHandler<OscSendResultEventArgs>? SendCompleted;
 }
 
 public sealed class UdpOscSender : IOscSender
@@ -28,21 +34,29 @@ public sealed class UdpOscSender : IOscSender
         _client = new UdpClient();
     }
 
+    public event EventHandler<OscSendResultEventArgs>? SendCompleted;
+
     public bool SendChatbox(OscChatboxMessage message)
     {
+        var success = false;
+        var bytes = 0;
+
         try
         {
             var line = OscChatboxEncoder.TruncateToLimit(message.Text);
             var packet = OscChatboxEncoder.Encode(message with { Text = line });
-            var sent = _client.Send(packet, packet.Length, _endpoint);
+            bytes = packet.Length;
+            var sent = _client.Send(packet, bytes, _endpoint);
             _logger.LogDebug("OSC chatbox: {Bytes} bytes to {Endpoint}", sent, _endpoint);
-            return true;
+            success = true;
         }
         catch (Exception ex)
         {
             _logger.LogWarning(ex, "OSC chatbox send failed");
-            return false;
         }
+
+        SendCompleted?.Invoke(this, new OscSendResultEventArgs(success, DateTimeOffset.Now, bytes));
+        return success;
     }
 
     public void Dispose() => _client.Dispose();

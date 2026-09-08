@@ -53,6 +53,12 @@ public sealed class MediaModule : IModule, ISegmentSource
             return null;
         }
 
+        // Privacy first: never read media metadata without explicit user consent.
+        if (!_consent.IsApproved(PrivacyHooks.MediaSession))
+        {
+            return null;
+        }
+
         var text = MediaTextFormatter.Format(_monitor.Current, _settings.Value);
         return string.IsNullOrEmpty(text)
             ? null
@@ -71,12 +77,8 @@ public sealed class MediaModule : IModule, ISegmentSource
             SetState(ModuleState.Starting);
         }
 
-        if (!_consent.IsApproved(PrivacyHooks.MediaSession))
-        {
-            // Reading media metadata is gated behind user consent.
-            _consent.SetApproved(PrivacyHooks.MediaSession, approved: true);
-        }
-
+        // Reading media metadata stays gated behind explicit user consent
+        // (managed on the Privacy page) — never auto-approve here.
         _monitor.Start();
         SetState(ModuleState.Running);
         return Task.CompletedTask;

@@ -1,2 +1,11 @@
-/Overline.Tests
-/Overline.Tests
+# Build outputs
+bin/
+obj/
+
+# Installer / publish artifacts
+artifacts/
+
+# Rider / VS user files
+.idea/
+.vs/
+*.user
