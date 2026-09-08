@@ -1,7 +1,11 @@
 name: Release installer
 
 # Builds the Inno Setup installer on version tags (v1.2.3, V1.2.3, ...)
-# and publishes it in a draft GitHub Release.
+# and publishes it in a GitHub Release attached to the tag.
+#
+# Note: releases are created published (not draft) on purpose — GitHub never
+# attaches API-created drafts to their tag (they stay "untagged" until the
+# draft is published), see cli/cli#11589.
 
 on:
   push:
@@ -35,7 +39,7 @@ jobs:
           TAG_VERSION: ${{ github.ref_name }}
         run: ./build-installer.ps1 -Version ($env:TAG_VERSION -replace '^[vV]', '')
 
-      - name: Publish draft release
+      - name: Publish release
         shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}
@@ -46,4 +50,4 @@ jobs:
           if (-not (Test-Path $installer)) {
             throw "Installer introuvable: $installer"
           }
-          gh release create $tag --draft --title "Overline $version" --generate-notes $installer
+          gh release create $tag --title "Overline $version" --generate-notes $installer
