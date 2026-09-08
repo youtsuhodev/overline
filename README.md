@@ -22,13 +22,6 @@ first and a hard 144-character budget.
 
 ---
 
-> [!NOTE]
-> This is the ground-up rewrite of **MagicChatBox (v2)**. The complete legacy
-> codebase is preserved untouched in [`OLD/`](OLD/) for reference only — do not
-> build or edit it; it exists to mine features for porting into Overline.
-
----
-
 ## 📑 Table of contents
 
 <details>
