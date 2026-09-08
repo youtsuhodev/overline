@@ -1,7 +1,10 @@
 # Overline - build the Windows installer (.exe)
 # 1. Builds + publishes a self-contained win-x64 Overline.exe
 # 2. Compiles it into an Inno Setup installer
-param([switch]$SkipBuild)
+param(
+    [switch]$SkipBuild,
+    [string]$Version
+)
 
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -26,6 +29,7 @@ function Resolve-Iscc {
 }
 
 function Get-Version {
+    if ($Version) { return $Version }
     $props = Get-Content -Path 'Directory.Build.props' -Raw
     $m = [regex]::Match($props, '<Version>\s*([^<]+?)\s*</Version>')
     if ($m.Success) { return $m.Groups[1].Value.Trim() }
